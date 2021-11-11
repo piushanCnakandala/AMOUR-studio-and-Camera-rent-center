@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ServiceBill" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1abbc3c2-1b4e-4c73-9c62-4298e68391bc">
+	<parameter name="totalPrice" class="java.lang.Double"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="packageId" class="java.lang.String"/>
+	<field name="photographerId" class="java.lang.String"/>
+	<field name="packageCatogeryId" class="java.lang.String"/>
+	<field name="packagePrice" class="java.lang.Double"/>
+	<background>
+		<band height="15" splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="10" width="138" height="60" uuid="ffb6b840-b391-4e04-afa2-17e3ee54b74e"/>
+				<textElement>
+					<font size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AMOUR]]></text>
+			</staticText>
+			<image>
+				<reportElement x="120" y="10" width="50" height="50" uuid="bf0d7917-e104-4609-ab34-d77cef955e8a"/>
+				<imageExpression><![CDATA["D:/GDSE57/1st SEM/AMOUR/src/assets/camera.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="320" y="30" width="100" height="30" uuid="161a734f-a6ab-4ecb-93e0-c7865a020072"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STUDIO]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="141" height="30" forecolor="#FFFAFA" backcolor="#22245E" uuid="624bc23f-6c07-4b7b-a578-ed1e80082c29">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="67810a87-5b81-47de-ac59-bfb7966fbc3f"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Package Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="141" y="0" width="138" height="30" forecolor="#FFFFFF" backcolor="#22245E" uuid="de3fc168-6efa-46a9-8e14-cee96af02be9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4aa81e2e-6bfa-4db1-8c6f-a0dc0aad559c"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Photographer Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="279" y="0" width="138" height="30" forecolor="#FFFCFC" backcolor="#22245E" uuid="da20886a-5c7c-470a-ab9f-5882594c8993">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="214b068b-f9fd-4e29-80db-12a2b9c5ddd5"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PackageCatogery]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="417" y="0" width="138" height="30" forecolor="#FFFFFF" backcolor="#22245E" uuid="2752db51-893b-4ddd-8fc2-adc745ad668e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7e9ca2d0-ecce-476e-ad7e-7d68a814ab74"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[packagePrice]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="141" y="80" width="129" height="30" uuid="428b8a7f-accb-4199-82c6-6c9dd968681c"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPrice}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="80" width="120" height="30" uuid="b6cc6d9a-96f8-4bfb-b7ca-dee70be3780b"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Amount  :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="17" width="141" height="30" uuid="a9967f4b-315d-45e5-a8d3-94fff13a295b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="67810a87-5b81-47de-ac59-bfb7966fbc3f"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{packageId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="17" width="138" height="30" uuid="094ecb4d-3a05-4332-97c2-b14060b4fc03">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4aa81e2e-6bfa-4db1-8c6f-a0dc0aad559c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{photographerId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="17" width="138" height="30" uuid="db26ade4-1b4c-44d5-83d4-915e8f438864">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="214b068b-f9fd-4e29-80db-12a2b9c5ddd5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{packageCatogeryId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="17" width="138" height="30" uuid="22b4b460-6ca1-485d-9eee-e7e6ef3a180a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7e9ca2d0-ecce-476e-ad7e-7d68a814ab74"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{packagePrice}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="240" splitType="Stretch">
+			<staticText>
+				<reportElement x="157" y="126" width="247" height="30" forecolor="#6471BD" uuid="c4335ba7-c117-4036-9ae1-f87d01983c5d"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thank you ! Come Again!!]]></text>
+			</staticText>
+			<image>
+				<reportElement x="150" y="10" width="260" height="116" uuid="0508ea70-853b-4815-9138-d9dc606257f2"/>
+				<imageExpression><![CDATA["D:/GDSE57/1st SEM/AMOUR/src/assets/91969263_3488938767802126_4146774397253844992_n.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="614.0" prefWidth="854.0" style="-fx-background-color: #bdc3c7;" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PhotogrphyServiceHistoryController">
+   <children>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="68.0" layoutX="30.0" layoutY="69.0" stroke="WHITE" strokeType="INSIDE" width="407.0" />
+      <JFXTextField fx:id="txtSearchOrder" focusColor="WHITE" layoutX="43.0" layoutY="80.0" onKeyReleased="#searchONaction" prefHeight="47.0" prefWidth="306.0" promptText="Search" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="24.0" layoutY="16.0" prefHeight="52.0" prefWidth="344.0" text="Photography Service Order History">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblPackage" layoutX="21.0" layoutY="175.0" prefHeight="417.0" prefWidth="813.0">
+        <columns>
+          <TableColumn fx:id="colOid" prefWidth="111.0" text="Order Id" />
+          <TableColumn fx:id="colPid" prefWidth="99.0" text="Package Id" />
+            <TableColumn fx:id="colPcId" prefWidth="150.0" text="package Catogery Id" />
+            <TableColumn fx:id="colCid" prefWidth="110.0" text="Customer Id" />
+            <TableColumn fx:id="colPrice" prefWidth="129.0" text="Packagre  Price" />
+            <TableColumn fx:id="colPhId" prefWidth="119.0" text="Photographer Id" />
+            <TableColumn fx:id="colDate" prefWidth="94.0" text="Order Date" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="47.0" fitWidth="41.0" layoutX="368.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/magnifying_glass.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="wwwwwwww" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="908991a1-413a-456a-b305-be79cc84f44e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="photographerReports"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from photographer
+]]>
+	</queryString>
+	<field name="photographer_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="photographer_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="photographer_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="photographer"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="photographer_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="photographer_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="photographer_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="photographer"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="photographer_address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="photographer_address"/>
+		<property name="com.jaspersoft.studio.field.label" value="photographer_address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="photographer"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="photographer_number" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="photographer_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="photographer_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="photographer"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="photographer_salary" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="photographer_salary"/>
+		<property name="com.jaspersoft.studio.field.label" value="photographer_salary"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="photographer"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="124" splitType="Stretch">
+			<image>
+				<reportElement x="150" y="10" width="50" height="50" uuid="e0206dc5-6d99-4206-9e0a-3217c8ddde43"/>
+				<imageExpression><![CDATA["D:/GDSE57/1st SEM/AMOUR/src/assets/camera.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="210" y="10" width="198" height="50" uuid="ee5f0f48-f03f-4fee-bedd-fb9f89474265"/>
+				<textElement>
+					<font size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AMOUR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="40" width="100" height="30" uuid="bbb8436f-bbb0-4f79-9489-240553a38eab"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[STUDIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="90" width="233" height="30" uuid="022ac66b-a221-4034-a74f-89a7a6d8f463"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Photographer System Report]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="90" width="12" height="30" uuid="b87c33b5-0716-4a22-bc4d-16e83e452bf8"/>
+				<imageExpression><![CDATA["D:/GDSE57/1st SEM/AMOUR/src/assets/circle-fill.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="100" height="30" forecolor="#FFFFFF" backcolor="#1A0E42" uuid="be96b256-bd72-4963-b966-5910dbec53ca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6196d74e-1088-4ef3-8c76-ff665199a266"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Photographer Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="0" width="110" height="30" forecolor="#FFFFFF" backcolor="#1A0E42" uuid="c7606586-47e5-4b2f-b473-05ef4be7ae1b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f7e556d7-11d7-43f3-b509-09c483fd3e7c"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[    Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="210" y="0" width="123" height="30" forecolor="#FFFFFF" backcolor="#1A0E42" uuid="7b4b530c-789c-4115-8090-231c60ca7636">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="851443ff-eb04-4c60-a4e4-d254aca625f1"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[     Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="333" y="0" width="111" height="30" forecolor="#FFFFFF" backcolor="#1A0E42" uuid="2da9ec13-953c-461d-8b99-27807c10d026">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="81378966-6846-45fd-9e4f-4c8d0a0e343b"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[     Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="440" y="0" width="115" height="30" forecolor="#FFFFFF" backcolor="#1A0E42" uuid="f3346362-9ed4-444f-a889-9865a5001a1b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c746fdde-65b7-4c1b-9f10-b7e7a25a5e1c"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[  Salary]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="9b7cba07-77de-4c8c-83a8-4d0413411466">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6196d74e-1088-4ef3-8c76-ff665199a266"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{photographer_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="110" height="30" uuid="c7aa3986-7558-4b08-a491-5e43c6e57350">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f7e556d7-11d7-43f3-b509-09c483fd3e7c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{photographer_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="0" width="123" height="30" uuid="b073e62f-3e2f-4203-97cd-174242ac7f94">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="851443ff-eb04-4c60-a4e4-d254aca625f1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{photographer_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="30" uuid="acb15eef-0eaa-4810-a47d-21e3e17f0f34">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="81378966-6846-45fd-9e4f-4c8d0a0e343b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{photographer_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="115" height="30" uuid="ef69a60c-3540-4b2d-a9b0-62f26b0757a5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c746fdde-65b7-4c1b-9f10-b7e7a25a5e1c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{photographer_salary}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="74" splitType="Stretch"/>
+	</columnFooter>
+	<summary>
+		<band height="109" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="121" height="20" uuid="f0e09f64-0b39-4bc3-a3b4-0b094408262f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AMOUR STUDIO]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="30" width="121" height="30" uuid="5ffc9793-93bf-4fc4-9a28-0f6937769f5d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="0" y="40" width="100" height="30" uuid="3487bba7-09e5-4194-b614-038f28b86a7c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="50" width="100" height="30" uuid="096acbf4-053a-4080-8513-a77daa8f0de3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[0754118387]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

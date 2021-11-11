@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="lodingPane" prefHeight="304.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Launcher.LauncherPreloader">
+   <children>
+      <ImageView fitHeight="323.0" fitWidth="209.0" layoutX="208.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/180633635_4646782602017731_4764980950978103739_n.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="312.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/122504693_4087537944608869_4325566881952713063_n.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="321.0" fitWidth="208.0" layoutX="417.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/240446912_4975837675778887_6857758659589122201_n.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="153.0" layoutX="116.0" layoutY="87.0" opacity="0.64" stroke="#f5f5f5" strokeType="INSIDE" width="396.0" />
+      <Label layoutX="287.0" layoutY="98.0" prefHeight="60.0" prefWidth="209.0" text="AMOUR">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="195.0" fitWidth="128.0" layoutX="138.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/camera.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="305.0" layoutY="143.0" prefHeight="60.0" prefWidth="157.0" text="PLEASE WAIT">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <ProgressIndicator layoutX="353.0" layoutY="188.0" prefHeight="30.0" prefWidth="47.0" />
+   </children>
+</AnchorPane>

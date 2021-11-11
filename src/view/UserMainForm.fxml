@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="792.0" prefWidth="1191.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserMainFormController">
+   <children>
+      <AnchorPane prefHeight="808.0" prefWidth="384.0">
+         <children>
+            <ImageView fitHeight="584.0" fitWidth="384.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/182872657_4646784115350913_6303661377317376999_n.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="45.0" layoutY="586.0" prefHeight="123.0" prefWidth="312.0" text="AMOUR">
+               <font>
+                  <Font name="Gabriola" size="96.0" />
+               </font>
+            </Label>
+            <Button layoutX="119.0" layoutY="736.0" mnemonicParsing="false" onAction="#logOutOnAction" prefHeight="37.0" prefWidth="124.0" style="-fx-background-color: #2c3e50; -fx-background-radius: 10;" text="Log out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <ToggleButton fx:id="btndashBoard" layoutX="40.0" layoutY="21.0" mnemonicParsing="false" onAction="#dashBoardFormOnAction" prefHeight="53.0" prefWidth="282.0" styleClass="tBtn" stylesheets="@../styles/styles.css" text="Dash Board">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="user" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton layoutX="40.0" layoutY="97.0" mnemonicParsing="false" onAction="#photographerFormOnAction" prefHeight="53.0" prefWidth="282.0" styleClass="tBtn" stylesheets="@../styles/styles.css" text="Photography Service" toggleGroup="$user">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton layoutX="40.0" layoutY="172.0" mnemonicParsing="false" onAction="#rentItemFormOnAction" prefHeight="53.0" prefWidth="282.0" styleClass="tBtn" stylesheets="@../styles/styles.css" text="Rent Item Service" toggleGroup="$user">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton layoutX="40.0" layoutY="258.0" mnemonicParsing="false" onAction="#historyFormOnAction" prefHeight="53.0" prefWidth="282.0" styleClass="tBtn" stylesheets="@../styles/styles.css" text="Order History" toggleGroup="$user">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton layoutX="40.0" layoutY="339.0" mnemonicParsing="false" onAction="#returnFormOnAction" prefHeight="53.0" prefWidth="282.0" styleClass="tBtn" stylesheets="@../styles/styles.css" text="Return" toggleGroup="$user">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton layoutX="40.0" layoutY="427.0" mnemonicParsing="false" onAction="#manageCustomerFormOnAction" prefHeight="53.0" prefWidth="282.0" styleClass="tBtn" stylesheets="@../styles/styles.css" text="Manage Customers" toggleGroup="$user">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </ToggleButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainPane" layoutX="383.0" layoutY="-5.0" prefHeight="814.0" prefWidth="891.0" style="-fx-background-color: #bdc3c7;" stylesheets="@../styles/styles.css" />
+      <Label layoutX="259.0" layoutY="687.0" prefHeight="37.0" prefWidth="113.0" text="Studio">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

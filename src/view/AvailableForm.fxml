@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="814.0" prefWidth="891.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AvailableFormController">
+   <children>
+      <TableView fx:id="tblRentItem" layoutX="22.0" layoutY="496.0" prefHeight="296.0" prefWidth="844.0" stylesheets="@../styles/styles.css">
+         <columns>
+            <TableColumn fx:id="colSid" prefWidth="163.0" text="Serial Number" />
+            <TableColumn fx:id="colCatogeryName" prefWidth="168.0" text="Catogery Name" />
+            <TableColumn fx:id="colModelName" prefWidth="176.0" text="Model Name" />
+            <TableColumn fx:id="colItemType" prefWidth="158.0" text="Item Type" />
+            <TableColumn fx:id="colPrice" prefWidth="178.0" text="Price" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblPackages" layoutX="22.0" layoutY="178.0" prefHeight="229.0" prefWidth="844.0" stylesheets="@../styles/styles.css">
+         <columns>
+            <TableColumn fx:id="colPid" prefWidth="114.0" text="Package Id" />
+            <TableColumn fx:id="colPCName" prefWidth="150.0" text="Catpgery Name" />
+            <TableColumn fx:id="colPackageType" prefWidth="186.0" text="Package Type" />
+            <TableColumn fx:id="colDeatils" prefWidth="250.0" text="Deatils" />
+            <TableColumn fx:id="colPackagePrice" prefWidth="143.0" text="Price" />
+         </columns>
+      </TableView>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="53.0" layoutX="615.0" layoutY="432.0" stroke="WHITE" strokeType="INSIDE" width="251.0" />
+      <ImageView fitHeight="32.0" fitWidth="36.0" layoutX="816.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/magnifying_glass.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtSearch" layoutX="645.0" layoutY="438.0" onKeyReleased="#onKeyReleasedOnAction" prefHeight="41.0" prefWidth="154.0" />
+      <Label layoutX="41.0" layoutY="117.0" prefHeight="41.0" prefWidth="242.0" text="Available Packages">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="438.0" prefHeight="41.0" prefWidth="242.0" text="Available  RentItems">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="91.0" layoutX="694.0" layoutY="9.0" stroke="WHITE" strokeType="INSIDE" width="165.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="91.0" layoutX="520.0" layoutY="9.0" stroke="WHITE" strokeType="INSIDE" width="154.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="53.0" layoutX="615.0" layoutY="110.0" stroke="WHITE" strokeType="INSIDE" width="251.0" />
+      <ImageView fitHeight="32.0" fitWidth="36.0" layoutX="816.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/magnifying_glass.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtSearch2" layoutX="645.0" layoutY="116.0" onKeyReleased="#onKeyReleasedOnAction2" prefHeight="41.0" prefWidth="154.0" />
+      <Label layoutX="26.0" layoutY="14.0" prefHeight="73.0" prefWidth="294.0" text="Dash board ">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <Separator layoutX="22.0" layoutY="86.0" prefHeight="0.0" prefWidth="320.0" />
+      <Label layoutX="541.0" layoutY="14.0" prefHeight="32.0" prefWidth="112.0" text="Avaible Packages">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="713.0" layoutY="14.0" prefHeight="32.0" prefWidth="128.0" text="Avaible Rent Items">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPackage" layoutX="568.0" layoutY="46.0" prefHeight="41.0" prefWidth="71.0" text="00">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lablItems" layoutX="742.0" layoutY="42.0" prefHeight="41.0" prefWidth="71.0" text="00">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
